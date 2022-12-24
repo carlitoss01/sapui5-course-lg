@@ -23,10 +23,9 @@
       "outputCapture": "std",
       "port": 9229,
       "env": {
-        "DEBUG": "--inspect",
+        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"path\":\"/Northwind\",\"destination\":\"NorthWind\"}]",
         "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/logaly/employees\"}",
-        "FIORI_TOOLS_BACKEND_CONFIG": "[{\"path\":\"/Northwind\",\"destination\":\"NorthWind\"}]"
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/logaly/employees\"}"
       }
     },
     {
