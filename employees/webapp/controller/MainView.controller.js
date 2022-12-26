@@ -10,6 +10,16 @@ sap.ui.define([
         return Controller.extend("logalygroup.employees.controller.MainView", {
             onInit: function () {
 
+            },
+            onValidate: function () {
+                var inputEmployee = this.byId("inputEmployee");
+                var valueEployee = inputEmployee.getValue();
+
+                if (valueEployee.length === 6) {
+                    inputEmployee.setDescription("OK");
+                } else {
+                    inputEmployee.setDescription("Not OK");
+                }
             }
         });
     });

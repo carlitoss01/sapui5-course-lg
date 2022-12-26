@@ -1,9 +1,10 @@
-<mvc:View controllerName="logalygroup.employees.controller.MainView"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+<mvc:View controllerName="logalygroup.employees.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-        <Text text="Hola mundo" id="Hello"/>
+            <HBox id="Hbox">
+                <Label id="labelEmployee" text="{i18n>labelEmployee}" class="sapUiSmallMargin" labelFor="inputEmployee" />
+                <Input id="inputEmployee" maxLength="6" width="200px" class="sapUiSmallMarginEnd" liveChange="onValidate" />
+            </HBox>
         </content>
     </Page>
 </mvc:View>
